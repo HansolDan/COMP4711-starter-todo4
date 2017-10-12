@@ -15,3 +15,7 @@ Date format: YYYY-MM-DD
 - Created views controller to interact with secondary template  
 - Fleshed out prioritized view  
 - Fleshed out categorized view  
+- Added a markdown processor
+- Wrote a help wanted ad
+- Added Helpme Controller
+- Processed the markdown
