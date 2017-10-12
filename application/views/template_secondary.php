@@ -15,6 +15,7 @@
                     {menubar} 
 				</div>
             </div>
+            <h3>Tasks by Category</h3>
             <div id="content">
                 <h1>{pagetitle}</h1>
                 <div class="row">
