@@ -11,5 +11,7 @@ Date format: YYYY-MM-DD
 - Pre-loaded the task model in autoload  
 - Base controller tweaking
 - Added Homepage detail
-
-
+- Setup second template  
+- Created views controller to interact with secondary template  
+- Fleshed out prioritized view  
+- Fleshed out categorized view  
