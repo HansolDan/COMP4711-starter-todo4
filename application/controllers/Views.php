@@ -38,13 +38,22 @@ class Views extends Application
 		return $this->parser->parse('by_priority', $parms, true);
 	}
 
+	/**
+	 * Method to flesh out the categorized view. This will adjust the panel views to suit our purpose.
+	 */
+	function makeCategorizedPanel()
+	{
+		$parms = ['display_tasks' => $this->tasks->getCategorizedTasks()];
+		return $this->parser->parse('by_category', $parms, true);
+	}
+
 	public function index()
 	{
 		$this->data['pagetitle'] = 'Ordered TODO List';
 		$tasks = $this->tasks->all();   // get all the tasks
 		$this->data['content'] = 'Ok'; // so we don't need pagebody
 		$this->data['leftside'] = $this->makePrioritizedPanel($tasks);
-		// $this->data['rightside'] = $this->makeCategorizedPanel($tasks);
+		$this->data['rightside'] = $this->makeCategorizedPanel($tasks);
 
 		$this->render('template_secondary');
 	}
