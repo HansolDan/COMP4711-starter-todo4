@@ -21,12 +21,16 @@ class Mtce extends Application {
 		{
 			if (!empty($task->status))
 				$task->status = $this->app->status($task->status);
-			$result .= $this->parser->parse('oneitem', (array) $task, true);
+            if ($role == ROLE_OWNER)
+                $result .= $this->parser->parse('oneitemx', (array) $task, true);
+            else
+                $result .= $this->parser->parse('oneitem', (array) $task, true);
 		}
 		$this->data['display_tasks'] = $result;
 
 		// and then pass them on
 		$this->data['pagebody'] = 'itemlist';
+
 
 		$this->render();
 	}
@@ -49,7 +53,12 @@ class Mtce extends Application {
 			if ($count >= $this->items_per_page) break;
 		}
 		$this->data['pagination'] = $this->pagenav($num);
-		$this->show_page($tasks);
+
+        // INSERT next three lines
+        $role = $this->session->userdata('userrole');
+        if ($role == ROLE_OWNER)
+            $this->data['pagination'] .= $this->parser->parse('itemadd',[], true);
+        $this->show_page($tasks);
 	}
 
 	// Build the pagination navbar

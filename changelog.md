@@ -37,3 +37,8 @@ Date format: YYYY-MM-DD
 - Start completion handling
 - Add checkboxes
 - Fixed duplicate table list in itemlist view
+- Added Role-specific maintenance list
+- Added New item button in itemadd.php
+- Added Make the Task ID a link in oneitemx view
+
+
