@@ -33,3 +33,7 @@ Date format: YYYY-MM-DD
 - Added the user role to the navbar
 - Added the role switching controller
 - Made the owner role visible on the maintenance page
+- Make the task list into a form
+- Start completion handling
+- Add checkboxes
+- Fixed duplicate table list in itemlist view
