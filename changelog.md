@@ -22,3 +22,7 @@ Date format: YYYY-MM-DD
 
 ## 2017-10-19  
 - Fixed class name to reflect Bootstrap2  
+- Made the Maintenance page
+- Added itemlist view to show Basic item list
+- Added Mtce controller 
+- Added oneitem view to show Individual item view fragments
