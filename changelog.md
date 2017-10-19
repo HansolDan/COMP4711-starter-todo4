@@ -18,4 +18,7 @@ Date format: YYYY-MM-DD
 - Added a markdown processor
 - Wrote a help wanted ad
 - Added Helpme Controller
-- Processed the markdown
+- Processed the markdown  
+
+## 2017-10-19  
+- Fixed class name to reflect Bootstrap2  
