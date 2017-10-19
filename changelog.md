@@ -40,5 +40,10 @@ Date format: YYYY-MM-DD
 - Added Role-specific maintenance list
 - Added New item button in itemadd.php
 - Added Make the Task ID a link in oneitemx view
-
-
+- Fixed bug in App model  
+- Added task validation rules  
+- Added add and edit functions to maintenance controller  
+- Display TODO item being worked with  
+- Fixed Memory_Model bug  
+- Handle canceling edit  
+- Handle task deletion  
