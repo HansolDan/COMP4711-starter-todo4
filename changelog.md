@@ -26,3 +26,5 @@ Date format: YYYY-MM-DD
 - Added itemlist view to show Basic item list
 - Added Mtce controller 
 - Added oneitem view to show Individual item view fragments
+- Item page extraction  
+- Added pagination  
