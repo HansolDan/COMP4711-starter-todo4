@@ -28,3 +28,8 @@ Date format: YYYY-MM-DD
 - Added oneitem view to show Individual item view fragments
 - Item page extraction  
 - Added pagination  
+- Added Simple User Roles
+- Defined Our User Roles in constants.php
+- Added the user role to the navbar
+- Added the role switching controller
+- Made the owner role visible on the maintenance page
