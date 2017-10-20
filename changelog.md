@@ -47,3 +47,5 @@ Date format: YYYY-MM-DD
 - Fixed Memory_Model bug  
 - Handle canceling edit  
 - Handle task deletion  
+- Made size, group, and status form field
+- Edited itemedit view
