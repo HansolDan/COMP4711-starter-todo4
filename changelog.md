@@ -48,4 +48,7 @@ Date format: YYYY-MM-DD
 - Handle canceling edit  
 - Handle task deletion  
 - Made size, group, and status form field
-- Edited itemedit view
+- Edited itemedit view  
+
+## 2017-11-02  
+- Built the Task entity class, with setter methods for each task property  
