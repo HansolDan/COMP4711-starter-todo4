@@ -52,3 +52,5 @@ Date format: YYYY-MM-DD
 
 ## 2017-11-02  
 - Built the Task entity class, with setter methods for each task property  
+- Added tests folder to repo  
+- Added bootstrap file to the newly created tests folder  
