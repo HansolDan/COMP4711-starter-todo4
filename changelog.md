@@ -54,3 +54,4 @@ Date format: YYYY-MM-DD
 - Built the Task entity class, with setter methods for each task property  
 - Added tests folder to repo  
 - Added bootstrap file to the newly created tests folder  
+- Added phpunit.xml.dist to the root of the project  
