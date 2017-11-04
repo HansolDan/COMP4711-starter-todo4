@@ -55,3 +55,6 @@ Date format: YYYY-MM-DD
 - Added tests folder to repo  
 - Added bootstrap file to the newly created tests folder  
 - Added phpunit.xml.dist to the root of the project  
+
+## 2017-11-03  
+- Refactored task entity class setter methods  
