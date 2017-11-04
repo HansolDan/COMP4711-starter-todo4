@@ -6,19 +6,25 @@
  */
 class Task extends Entity
 {
+	var $id,
+		$task,
+		$priority,
+		$size,
+		$group,
+		$deadline,
+		$status,
+		$flag;
+
 	public function __construct()
 	{
 		parent::__construct();
 	}
 
-	public function setId($id, $value)
+	public function setId($value)
 	{
-		echo "<script>
-				console.log('Setting $id to $value');
-				</script>";
 		if ((is_numeric($value)) && ($value > 0))
 		{
-			$this->data[$id] = $value;
+			$this->id = $value;
 		} else {
 			return false;
 		}
@@ -26,15 +32,12 @@ class Task extends Entity
 
 	public function setTask($task, $value)
 	{
-		echo "<script>
-				console.log('Setting $task to $value');
-				</script>";
 		// alphanumeric, below 64 characters
 		// check for spaces str_replace ' '  with  ''
 		$value = str_replace(' ', '', $value);
 		if ((ctype_alnum($value)) && (strlen($value) < 64))
 		{
-			$this->data[$task] = $value;
+			$this->task = $value;
 			return true;
 		} else {
 			// throw exception or handle error
@@ -42,15 +45,12 @@ class Task extends Entity
 		}
 	}
 
-	public function setPriority($priority, $value)
+	public function setPriority($value)
 	{
-		echo "<script>
-				console.log('Setting $priority to $value');
-				</script>";
 		// integer, positive, less than 4
 		if ((is_numeric($value)) && ($value > 0) && ($value < 4))
 		{
-			$this->data[$priority] = $value;
+			$this->priority = $value;
 			return true;
 		} else {
 			// throw exception or handle error
@@ -58,15 +58,12 @@ class Task extends Entity
 		}
 	}
 
-	public function setSize($size, $value)
+	public function setSize($value)
 	{
-		echo "<script>
-				console.log('Setting $size to $value');
-				</script>";
 		// integer, positive, less than 4
 		if ((is_numeric($value)) && ($value > 0) && ($value < 4))
 		{
-			$this->data[$size] = $value;
+			$this->size = $value;
 			return true;
 		} else {
 			// throw exception or handle error
@@ -74,15 +71,12 @@ class Task extends Entity
 		}
 	}
 
-	public function setGroup($group, $value)
+	public function setGroup($value)
 	{
-		echo "<script>
-				console.log('Setting $group to $value');
-				</script>";
 		// integer, positive, less than 5
 		if ((is_numeric($value)) && ($value > 0) && ($value < 5))
 		{
-			$this->data[$group] = $value;
+			$this->group = $value;
 			return true;
 		} else {
 			// throw exception or handle error
@@ -90,39 +84,29 @@ class Task extends Entity
 		}
 	}
 
-	public function setDeadline($deadline, $value)
+	public function setDeadline($value)
 	{
-		echo "<script>
-				console.log('Setting $deadline to $value');
-				</script>";
-		$this->data[$deadline] = $value;
+		$this->deadline = $value;
 		return true;
 	}
 
-	public function setStatus($status, $value)
+	public function setStatus($value)
 	{
-		echo "<script>
-				console.log('Setting $status to $value');
-				</script>";
 		// has to be either 1 or 2
 		if ((is_numeric($value)) && ($value > 0) && ($value < 3))
 		{
-			$this->data[$status] = $value;
+			$this->status = $value;
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	public function setFlag($flag, $value)
+	public function setFlag($value)
 	{
-		echo "<script>
-				console.log('Setting $flag to $value');
-				</script>";
-		// has to be 1?
 		if ((is_numeric($value)) && ($value == 1))
 		{
-			$this->data[$flag] = $value;
+			$this->flag = $value;
 			return true;
 		} else {
 			return false;
