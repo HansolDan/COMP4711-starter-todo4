@@ -19,8 +19,6 @@ class Task extends Entity
 		if ((is_numeric($value)) && ($value > 0))
 		{
 			$this->data[$id] = $value;
-		} else {
-			return false;
 		}
 	}
 
@@ -34,12 +32,8 @@ class Task extends Entity
 		$value = str_replace(' ', '', $value);
 		if ((ctype_alnum($value)) && (strlen($value) < 64))
 		{
-			$this->data[$task] = $value;
-			return true;
-		} else {
-			// throw exception or handle error
-			return false;
-		}
+            $this->data[$task] = $value;
+        }
 	}
 
 	public function setPriority($priority, $value)
@@ -50,12 +44,8 @@ class Task extends Entity
 		// integer, positive, less than 4
 		if ((is_numeric($value)) && ($value > 0) && ($value < 4))
 		{
-			$this->data[$priority] = $value;
-			return true;
-		} else {
-			// throw exception or handle error
-			return false;
-		}
+            $this->data[$priority] = $value;
+        }
 	}
 
 	public function setSize($size, $value)
@@ -66,12 +56,8 @@ class Task extends Entity
 		// integer, positive, less than 4
 		if ((is_numeric($value)) && ($value > 0) && ($value < 4))
 		{
-			$this->data[$size] = $value;
-			return true;
-		} else {
-			// throw exception or handle error
-			return false;
-		}
+            $this->data[$size] = $value;
+        }
 	}
 
 	public function setGroup($group, $value)
@@ -83,10 +69,6 @@ class Task extends Entity
 		if ((is_numeric($value)) && ($value > 0) && ($value < 5))
 		{
 			$this->data[$group] = $value;
-			return true;
-		} else {
-			// throw exception or handle error
-			return false;
 		}
 	}
 
@@ -96,7 +78,6 @@ class Task extends Entity
 				console.log('Setting $deadline to $value');
 				</script>";
 		$this->data[$deadline] = $value;
-		return true;
 	}
 
 	public function setStatus($status, $value)
@@ -107,11 +88,8 @@ class Task extends Entity
 		// has to be either 1 or 2
 		if ((is_numeric($value)) && ($value > 0) && ($value < 3))
 		{
-			$this->data[$status] = $value;
-			return true;
-		} else {
-			return false;
-		}
+            $this->data[$status] = $value;
+        }
 	}
 
 	public function setFlag($flag, $value)
@@ -122,10 +100,7 @@ class Task extends Entity
 		// has to be 1?
 		if ((is_numeric($value)) && ($value == 1))
 		{
-			$this->data[$flag] = $value;
-			return true;
-		} else {
-			return false;
-		}
+            $this->data[$flag] = $value;
+        }
 	}
 }
