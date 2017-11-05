@@ -48,4 +48,23 @@ Date format: YYYY-MM-DD
 - Handle canceling edit  
 - Handle task deletion  
 - Made size, group, and status form field
-- Edited itemedit view
+- Edited itemedit view  
+
+## 2017-11-02  
+- Built the Task entity class, with setter methods for each task property  
+- Added tests folder to repo  
+- Added bootstrap file to the newly created tests folder  
+- Added phpunit.xml.dist to the root of the project  
+
+## 2017-11-03  
+- Refactored task entity class setter methods  
+- Changed mtce controller name to Mtce
+- Added TaskTest class to verify that your task entity accepts property values
+- Edit task model  
+
+## 2017-11-04  
+- Added a TaskListTest class to verify that your collection of tasks  
+- Run and pass the unit tests  
+- Code coverage report logging  
+- Added reports subfolder to .gitignore  
+- Added .travis.yml to the root directory  
