@@ -13,6 +13,9 @@
         cacheTokens="true"
         verbose="false"
         bootstrap="tests/Bootstrap.php">
+    <logging>
+        <log type="testdox-html" target="./tests/reports/testdox.html" />
+    </logging>
     <testsuites>
         <testsuite name="CITools Test Suite">
             <directory>./tests/</directory>
