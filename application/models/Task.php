@@ -1,5 +1,7 @@
 <?php
 
+require_once '../application/core/Entity.php';
+
 /**
  * Task entity class, with setter methods for each task property from tasks.csv
  * id,task,priority,size,group,deadline,status,flag
@@ -28,15 +30,16 @@ class Task extends Entity
 		}
 	}
 
-	public function setTask($task, $value)
+	public function setTask($value)
 	{
 		// alphanumeric, below 64 characters
-		// check for spaces str_replace ' '  with  ''
-		$value = str_replace(' ', '', $value);
-		if ((ctype_alnum($value)) && (strlen($value) < 64))
+		// strip spaces
+		$formatted = str_replace(' ', '', $value);
+		if ((ctype_alnum($formatted)) && (strlen($formatted) <= 64))
 		{
-            $this->task = $value;
-        }
+			$this->task = $value;
+			return true;
+		}
 	}
 
 	public function setPriority($value)
