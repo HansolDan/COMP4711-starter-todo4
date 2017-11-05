@@ -67,3 +67,4 @@ Date format: YYYY-MM-DD
 - Run and pass the unit tests  
 - Code coverage report logging  
 - Added reports subfolder to .gitignore  
+- Added .travis.yml to the root directory  
