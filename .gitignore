@@ -162,3 +162,5 @@ modules.xml
 # End of https://www.gitignore.io/api/intellij,intellij+iml,intellij+all
 
 /tmp/*
+
+/tests/reports/
