@@ -59,5 +59,6 @@ Date format: YYYY-MM-DD
 ## 2017-11-03  
 - Refactored task entity class setter methods  
 - Changed mtce controller name to Mtce
-- Added TaskTest
+- Added TaskTest class to verify that your task entity accepts property values
 - Edit task model 
+- Added a TaskListTest class to verify that your collection of tasks
