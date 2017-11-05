@@ -58,3 +58,6 @@ Date format: YYYY-MM-DD
 
 ## 2017-11-03  
 - Refactored task entity class setter methods  
+- Changed mtce controller name to Mtce
+- Added TaskTest
+- Edit task model 
