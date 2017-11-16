@@ -16,134 +16,134 @@
 <!--15,"Organize the study",1,4,1,,,-->
 
 <tasks>
-    <task>
+    <taskObject>
         <id>1</id>
-        <description>COMP1234 assignment</description>
+        <task>COMP1234 assignment</task>
         <priority>3</priority>
         <size>2</size>
         <group>2</group>
         <deadline>20170219</deadline>
         <status>1</status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>2</id>
-        <description>Mow the lawn</description>
+        <task>Mow the lawn</task>
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
         <deadline></deadline>
         <status>2</status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>3</id>
-        <description>Wash the lambos</description>
+        <task>Wash the lambos</task>
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>6</id>
-        <description>Intramural hockey game</description>
+        <task>Intramural hockey game</task>
         <priority>1</priority>
         <size>2</size>
         <group>4</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>7</id>
-        <description>Canucks hockey game</description>
+        <task>Canucks hockey game</task>
         <priority>3</priority>
         <size>3</size>
         <group>4</group>
         <deadline>20170305</deadline>
         <status>1</status>
         <flag>1</flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>8</id>
-        <description>Buy steel-toed boots</description>
+        <task>Buy steel-toed boots</task>
         <priority>2</priority>
         <size>1</size>
         <group>3</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>9</id>
-        <description>Learn French</description>
+        <task>Learn French</task>
         <priority>1</priority>
         <size>3</size>
         <group>3</group>
         <deadline>20161231</deadline>
         <status>1</status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>10</id>
-        <description>Hit the gym</description>
+        <task>Hit the gym</task>
         <priority>2</priority>
         <size>1</size>
         <group>4</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>11</id>
-        <description>Pay Bills</description>
+        <task>Pay Bills</task>
         <priority></priority>
         <size></size>
         <group></group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>12</id>
-        <description>Meet George</description>
+        <task>Meet George</task>
         <priority>2</priority>
         <size>1</size>
         <group>1</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>13</id>
-        <description>Buy milk and bread</description>
+        <task>Buy milk and bread</task>
         <priority>2</priority>
         <size>1</size>
         <group>1</group>
         <deadline></deadline>
         <status></status>
         <flag>1</flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>14</id>
-        <description>Read War and Peace</description>
+        <task>Read War and Peace</task>
         <priority>1</priority>
         <size>3</size>
         <group>1</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
-    <task>
+    </taskObject>
+    <taskObject>
         <id>15</id>
-        <description>Organize the Study</description>
+        <task>Organize the Study</task>
         <priority>1</priority>
         <size>4</size>
         <group>1</group>
         <deadline></deadline>
         <status></status>
         <flag></flag>
-    </task>
+    </taskObject>
 </tasks>
