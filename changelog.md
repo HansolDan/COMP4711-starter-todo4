@@ -68,3 +68,6 @@ Date format: YYYY-MM-DD
 - Code coverage report logging  
 - Added reports subfolder to .gitignore  
 - Added .travis.yml to the root directory  
+
+## 2017-11-16  
+- Created a tasks.xml document to hold the same kind of data as our existing CSV file  
