@@ -72,3 +72,7 @@ Date format: YYYY-MM-DD
 ## 2017-11-16  
 - Created a tasks.xml document to hold the same kind of data as our existing CSV file  
 - Created initial XML_Model.php with load() function to populate record objects from tasks.xml  
+
+
+## 2017-11-17
+- Replace the store() logic in your model with code to rebuild the collection as a SimpleXMLElement, and save it
